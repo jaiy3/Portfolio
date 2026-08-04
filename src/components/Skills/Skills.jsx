@@ -13,10 +13,14 @@ function Skills() {
 
           <ul>
             <li>React</li>
+            <li>Typescript</li>
             <li>JavaScript</li>
             <li>HTML5</li>
             <li>CSS3</li>
+            <li>Tailwind CSS</li>
             <li>Vite</li>
+            <li>React Router</li>
+            <li>Axios</li>
           </ul>
         </div>
 
@@ -28,6 +32,8 @@ function Skills() {
             <li>Express.js</li>
             <li>REST APIs</li>
             <li>JWT Authentication</li>
+            <li>Zod Validation</li>
+            <li>bcrypt</li>
           </ul>
         </div>
 

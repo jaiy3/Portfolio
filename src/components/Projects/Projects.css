@@ -1,5 +1,5 @@
 .projects {
-  padding: 64px 8%;
+  padding: 32px 8% 64px;
 }
 
 .section-tag {
@@ -21,7 +21,10 @@
   align-items: center;
 
   padding: 2rem;
+  margin-bottom: 3rem;
+
   border-radius: 20px;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -30,14 +33,87 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 }
 
+/* ApplyFlow image */
+
 .project-image img {
   width: 100%;
   border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
 
   border-radius: 16px;
-
-  box-shadow: 0 20px 50px rgba(0,0,0,.08);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
 }
+
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  margin-top: .75rem;
+}
+
+.gallery-row img {
+  width: 100%;
+  height: 170px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+
+  transition: transform .3s ease;
+}
+
+.gallery-row img:hover {
+  transform: translateY(-4px);
+}
+
+.gallery-row a {
+  display: block;
+}
+
+.gallery-row img {
+  cursor: pointer;
+}
+
+.gallery-row img:hover {
+  transform: scale(1.03);
+}
+
+.feature-title {
+  margin-bottom: .75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.feature-list {
+  margin-bottom: 2rem;
+  padding-left: 1.2rem;
+
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.feature-list li {
+  margin-bottom: .35rem;
+}
+/* TeamFlow gallery */
+
 
 .project-info h3 {
   font-size: 2rem;
@@ -53,21 +129,21 @@
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: .75rem;
-
-  margin-bottom: 2rem;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .tech-stack span {
   background: #eff6ff;
   color: #2563eb;
 
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
 
   border-radius: 999px;
 
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
+
 
 .project-buttons {
   display: flex;
@@ -80,6 +156,10 @@
     gap: 2rem;
   }
 
+  .gallery-row {
+  grid-template-columns: 1fr;
+}
+
   .project-info {
     text-align: center;
   }
@@ -90,5 +170,10 @@
 
   .project-buttons {
     justify-content: center;
+  }
+
+  .feature-list {
+    text-align: left;
+    display: inline-block;
   }
 }

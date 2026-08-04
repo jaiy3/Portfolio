@@ -16,7 +16,7 @@ function Hero() {
         <h2>Full-Stack Software Engineer</h2>
 
         <p>
-          I build modern, scalable full-stack web applications with React, Node.js, Express, PostgreSQL and Prisma. I'm passionate about creating fast, intuitive products that solve real-world problems.
+          I build scalable full-stack applications with React, TypeScript, Node.js, Express, PostgreSQL and Prisma. I'm passionate about creating clean user experiences and production-ready software from database to deployment.
         </p>
 
         <div className="hero-buttons">
@@ -42,8 +42,8 @@ function Hero() {
           <div className="laptop-screen">
 
             <img
-              src="/images/applyflow-dashboard.png"
-              alt="ApplyFlow Dashboard"
+              src="/images/teamflow-dashboard.png"
+              alt="TeamFlow Dashboard"
               loading="lazy"
             />
 
