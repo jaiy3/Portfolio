@@ -13,7 +13,7 @@ function Skills() {
 
           <ul>
             <li>React</li>
-            <li>Typescript</li>
+            <li>TypeScript</li>
             <li>JavaScript</li>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -38,26 +38,36 @@ function Skills() {
         </div>
 
         <div className="skill-card">
-          <h3>Database</h3>
+        <h3>Database & Tools</h3>
 
-          <ul>
-            <li>PostgreSQL</li>
-            <li>Prisma ORM</li>
-          </ul>
-        </div>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>Prisma ORM</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>Postman</li>
+          <li>Railway</li>
+          <li>Vercel</li>
+        </ul>
+      </div>
 
         <div className="skill-card">
-          <h3>Tools</h3>
+          <h3>Web3 & AI</h3>
 
           <ul>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>VS Code</li>
-            <li>Postman</li>
-            <li>Railway</li>
-            <li>Vercel</li>
+            <li>Ethereum</li>
+            <li>Wagmi</li>
+            <li>RainbowKit</li>
+            <li>Viem</li>
+            <li>WalletConnect</li>
+            <li>Alchemy</li>
+            <li>OpenAI</li>
+            <li>OpenRouter</li>
           </ul>
         </div>
+
+       
       </div>
     </section>
   );
