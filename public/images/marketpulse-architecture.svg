@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" rx="28" fill="#f7f8fc"/>
+<text x="600" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#171923">MarketPulse Architecture</text>
+<text x="600" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#747b91">Real-time market ingestion, persistence and delivery</text>
+<g font-family="Arial, sans-serif">
+<rect x="430" y="145" width="340" height="72" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="600" y="176" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">Binance Trade Stream</text>
+<text x="600" y="200" text-anchor="middle" font-size="14" fill="#747b91">External market data</text>
+<line x1="600" y1="217" x2="600" y2="255" stroke="#6c63ff" stroke-width="4"/>
+<polygon points="600,270 590,252 610,252" fill="#6c63ff"/>
+<rect x="430" y="270" width="340" height="86" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="600" y="304" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">Market Worker</text>
+<text x="600" y="328" text-anchor="middle" font-size="14" fill="#747b91">Validate • cache • publish • enqueue</text>
+<line x1="600" y1="356" x2="600" y2="395" stroke="#6c63ff" stroke-width="4"/>
+<polygon points="600,410 590,392 610,392" fill="#6c63ff"/>
+<rect x="170" y="425" width="280" height="105" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="310" y="458" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">Redis</text>
+<text x="310" y="483" text-anchor="middle" font-size="14" fill="#747b91">Latest-price cache</text>
+<text x="310" y="506" text-anchor="middle" font-size="14" fill="#747b91">Pub/Sub event bus</text>
+<rect x="460" y="425" width="280" height="105" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="600" y="458" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">BullMQ</text>
+<text x="600" y="483" text-anchor="middle" font-size="14" fill="#747b91">Async persistence queue</text>
+<text x="600" y="506" text-anchor="middle" font-size="14" fill="#747b91">Retryable background jobs</text>
+<rect x="750" y="425" width="280" height="105" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="890" y="458" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">PostgreSQL</text>
+<text x="890" y="483" text-anchor="middle" font-size="14" fill="#747b91">Durable price history</text>
+<text x="890" y="506" text-anchor="middle" font-size="14" fill="#747b91">Indexed + paginated queries</text>
+<line x1="520" y1="356" x2="310" y2="425" stroke="#6c63ff" stroke-width="4"/>
+<line x1="600" y1="356" x2="600" y2="425" stroke="#6c63ff" stroke-width="4"/>
+<line x1="680" y1="356" x2="890" y2="425" stroke="#6c63ff" stroke-width="4"/>
+<line x1="310" y1="530" x2="310" y2="590" stroke="#6c63ff" stroke-width="4"/>
+<line x1="890" y1="530" x2="890" y2="590" stroke="#6c63ff" stroke-width="4"/>
+<line x1="600" y1="530" x2="600" y2="590" stroke="#6c63ff" stroke-width="4"/>
+<rect x="120" y="600" width="380" height="90" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="310" y="636" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">WebSocket Clients</text>
+<text x="310" y="662" text-anchor="middle" font-size="14" fill="#747b91">Live subscribed price updates</text>
+<rect x="410" y="600" width="380" height="90" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="600" y="636" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">Express REST API</text>
+<text x="600" y="662" text-anchor="middle" font-size="14" fill="#747b91">Auth • market queries • health • metrics</text>
+<rect x="700" y="600" width="380" height="90" rx="16" fill="#fff" stroke="#dfe3ee"/>
+<text x="890" y="636" text-anchor="middle" font-size="20" font-weight="700" fill="#171923">Docker + CI</text>
+<text x="890" y="662" text-anchor="middle" font-size="14" fill="#747b91">Reproducible builds + automated checks</text>
+</g>
+</svg>
