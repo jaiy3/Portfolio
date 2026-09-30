@@ -42,10 +42,10 @@ function Hero() {
           <div className="laptop-screen">
 
             <img
-              src="/images/teamflow-dashboard.png"
-              alt="TeamFlow Dashboard"
-              loading="lazy"
-            />
+  src="/images/atlasai-dashboard-portfolio.png"
+  alt="AtlasAI Dashboard"
+  loading="lazy"
+/>
 
           </div>
 
